@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quoting Style</title>
+</head>
+<body>
+
+  <script>
+
+    let story ="Story story, once upon a time, this is a story from a far far away land, the land's called 'Northumbria'. The people of Northumbria aren't known to be vain or unkind but rather are deemed the 'the best in the entire Solstice nation'.";
+    
+    let pattern =/(^|\W)'|'(\W]$)/ig; 
+    let output = story.replace(pattern, '$1"');
+    console.log(output);
+  </script>
+</body>
+</html>

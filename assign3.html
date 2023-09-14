@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers Again</title>
+</head>
+<body>
+
+  <script>
+    function javaScriptNum(value) {
+      let regEx = /^[+-]?\d*\.?\d+(?:[eE][+-]?\d+)?$/;
+      return regEx.test(value);
+    }
+  
+    //Test Cases
+    console.log(javaScriptNum('+007'));     
+    console.log(javaScriptNum('-246'));    
+    console.log(javaScriptNum('0.00451')); 
+    console.log(javaScriptNum('.003'));
+    console.log(javaScriptNum('3.00'));  
+    console.log(javaScriptNum('2e-12'));        
+    console.log(javaScriptNum('.'));  
+
+  </script>
+</body>
+</html>

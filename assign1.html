@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExp Golf</title>
+</head>
+<body>
+
+  <script>
+    //1. car and cat
+    let pattern1 =/ca(r|t)/;
+    let item1 = pattern1.test('car cat');
+    console.log(item1);
+
+    //2. pop and prop
+    let pattern2 =/pop|prop/;
+    let item2 = pattern2.test('pop prop');
+    console.log(item2); 
+
+    //3. ferret, ferry, ferrari
+    let pattern3 = /ferr(et|y|ari)/;
+    let item3 = pattern3.test('ferret ferry ferrari');
+    console.log(item3);
+
+    //4. any word ending in ious
+    let pattern4 = /\w+ious/;
+    let item4 =pattern4.test('capricious');
+    console.log(item4);
+
+    //5 a white space character followed by a period, comma, colon or semicolon
+    let pattern5 =/\s[.,:;]/;
+    let item5 =pattern5.test(' .,:; ');
+    console.log(item5);
+
+    //6. any word longer than six letters
+    let pattern6 =/\w{6,}/;
+    let item6 = pattern6.test('limerence');
+    console.log(item6);
+
+    //7. a word without letter e (or E)
+    let pattern7 =/[^cE\s]|\b/;
+    let item7 = pattern7.test('loaf');
+    console.log(item7);
+  </script>
+</body>
+</html>
